@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Comatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width,initial-scal=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     </head>
+     <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png.jpeg" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">about</a></li> 
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">contact</a></li>   
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <!-- <p>web developer</p> -->
+                    <h1> <span>Hi I'm Pranjali </span></h1>
+                        <h3>“Learning to code is learning to create and innovate.”</h3>
+                </div>
+            </div>
+        </div>
+        <!----------about------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <<img src="images/user.png.jpeg">>
+                      </div>
+                      
+                        <div class="about-col-2">
+                            <h1 class="sub-title" ></h1>About Me</h1>
+                        <p>Hello, 
+                            I'm pranjali,
+                            I'm a final-year student pursuing a bachelor's degree in the field of Information Technology . During my B.Tech journey, I started researching the intersection of the technical fields.
+                            I’m a hardworking student. Aiming to leverage proven communication, critical thinking,
+                            and leadership skills to be successfully utilized in a Web Developer’s role at your organization. I want to join your
+                            organization as an Employee and become a part of your organization.
+                        </p>
+                        <br>
+                        <br>
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p> 
+                        <div class="tab-contents" id="skills">
+                        <div class="tab-titles">
+                        <!-- <p class="tab-links active-link" onClick="opentab('skills')">skills</p> -->
+                       
+                            <ul>
+                                <!-- python html css js  -->
+                                <li><span></li>Web Development</span><br>web app Development</li> 
+                                <li><span></li>software Developer's</span><br>software engineering</li> 
+                            </ul>
+                        </div>
+                      
+                        </div>
+                        <div>
+                            <p class="tab-links active-link" id= "a1"  onClick="opentab('Education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-contents" id="Education"><br><br>
+                            <ul>
+                                <li><span></li>2019-1023</span><br>Btech Information Technology</li> 
+                            </ul>
+                        </div>
+                        <!-- <div class="tab-contents" id="skills">
+                            <ul>
+                               python html css js  -->
+                                <!-- <ul><span></li>Web Development</span><br>web app Development</ul> 
+                                <li><span></li>software Developer's</span><br>software engineering</li> 
+                            </ul>
+                        </div> -->
+                        <!-- <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span></li>2019-1023</span><br>Btech Information Technology</li> 
+                            </ul>
+                        </div> -->
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!---------Hobbies------>
+        <div id="Hobbies">
+            <div class="container">
+                <h1 class="sub-title">My Hobbies</h1><br><br>
+                <div class="Hobbies-list">
+                    <div>
+                        <h2>My Hobbies</h2>
+                        <h4>Reading Books</h4>
+                        <h4>Travelling</h4>
+                        <h4>Playing Games</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div><br><br>
+        <section class="footer1">
+            <h1 class="f1">CONTACT ME</h1><br>
+            <!-- <i class="fa fa-envelope" style="font-size:30px;color:white,"></i> -->
+            <i class="fa fa-envelope" style="font-size:25px;color:white;margin-left:120px">   abc@gmail.com</i><br><br>
+            <i class="fa fa-instagram" style="font-size:25px;color:white;margin-left:120px">   abc@gmail.com</i><br><br>
+            <i class="fa fa-linkedin-square" style="font-size:25px;color:white;margin-left:120px">   abc@gmail.com</i>
+            <section>
+                
+            </section>
+
+        </section>
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-link");
+                }
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-tab");
+                } 
+                event.currentTarget.classlist.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            } 
+        </script>
+     </body>
+</html>
